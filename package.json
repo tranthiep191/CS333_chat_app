@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"err",
-    "start" : "node index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,15 @@
   },
   "homepage": "https://github.com/tranthiep191/CS333_chat_app#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "knex": "^0.95.2",
     "mongoose": "^5.11.19",
+    "pg": "^8.5.1",
     "socket.io": "^4.0.0"
   }
 }
