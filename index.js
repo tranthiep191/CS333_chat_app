@@ -10,6 +10,8 @@ mongoose.connect(process.env.DATABASE, {
     useNewUrlParser: true,
 })
 
+
+
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
   });
@@ -20,7 +22,8 @@ const server = app.listen(port, () => {
 
 const io = require('socket.io')(server);
 
-require("./model/Message")
+require("./model/Message");
+
 
 const Message = mongoose.model("Message");
 
@@ -40,3 +43,8 @@ socket.on('disconnect', () => {
     console.log('user disconnected');
 });
 });
+
+require("./model/User");
+
+
+require("./model/Chatroom");
